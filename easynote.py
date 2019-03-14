@@ -35,11 +35,11 @@ class App():
 		frame = tk.Frame(master) # 添加一个Frame框架
 		frame.pack(side=tk.LEFT, padx=10, pady=10) # 自动调整
 
-		self.hi_there = tk.Button(frame, text="打招呼", bg="black", fg="white", command=self.say_hi) # 添加按钮组件
+		self.hi_there = tk.Button(frame, text="Welcome！", bg="black", fg="white", command=self.say_hi) # 添加按钮组件
 		self.hi_there.pack() # 
 
 	def say_hi(self):	
-		print("互联网的广大朋友们大家好，我是小甲鱼！")
+		print("Welcome to use EasyNote1.3！\n")
 
 class CtrlPenal():
 	def __init__():
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 	elif (os_type == "Windows" ):
 		pass
 	root = tk.Tk()   # 实例化顶层 
-	app = APP(root)  # root作为参数， 一般是这么写
+	app = App(root)  # root作为参数， 一般是这么写
 
 	root.mainloop()  # 主循环	
 
